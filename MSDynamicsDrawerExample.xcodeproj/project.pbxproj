@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B98A32711A70C7790026A047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32701A70C7790026A047 /* main.m */; };
+		B98A32741A70C7790026A047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32731A70C7790026A047 /* AppDelegate.m */; };
+		B98A32771A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B98A32751A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodeld */; };
+		B98A32791A70C7790026A047 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98A32781A70C7790026A047 /* Images.xcassets */; };
+		B98A327C1A70C7790026A047 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98A327A1A70C7790026A047 /* LaunchScreen.xib */; };
+		B98A32881A70C7790026A047 /* MSDynamicsDrawerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32871A70C7790026A047 /* MSDynamicsDrawerExampleTests.m */; };
+		B98A32971A70C7B50026A047 /* MSDynamicsDrawerStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32931A70C7B50026A047 /* MSDynamicsDrawerStyler.m */; };
+		B98A32981A70C7B50026A047 /* MSDynamicsDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32961A70C7B50026A047 /* MSDynamicsDrawerViewController.m */; };
+		B98A329D1A70CB230026A047 /* MSLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A329A1A70CB230026A047 /* MSLogoViewController.m */; };
+		B98A32A11A70CC540026A047 /* MSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32A01A70CC540026A047 /* MSMenuViewController.m */; };
+		B98A32A41A70CC920026A047 /* MSStylersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32A31A70CC920026A047 /* MSStylersViewController.m */; };
+		B98A32A71A70CD050026A047 /* MSDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32A61A70CD050026A047 /* MSDynamicsViewController.m */; };
+		B98A32AA1A70CD370026A047 /* MSMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32A91A70CD370026A047 /* MSMenuCell.m */; };
+		B98A32AD1A70CD5C0026A047 /* MSBounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32AC1A70CD5C0026A047 /* MSBounceViewController.m */; };
+		B98A32B01A70CD990026A047 /* MSGesturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32AF1A70CD990026A047 /* MSGesturesViewController.m */; };
+		B98A32B31A70CDBA0026A047 /* MSControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32B21A70CDBA0026A047 /* MSControlsViewController.m */; };
+		B98A32B61A70CDD00026A047 /* MSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32B51A70CDD00026A047 /* MSMapViewController.m */; };
+		B98A32B91A70CDE60026A047 /* MSEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32B81A70CDE60026A047 /* MSEditableTableViewController.m */; };
+		B98A32BC1A70CDF70026A047 /* MSLongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32BB1A70CDF70026A047 /* MSLongTableViewController.m */; };
+		B98A32BF1A70CE0D0026A047 /* MSMonospaceWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32BE1A70CE0D0026A047 /* MSMonospaceWebViewController.m */; };
+		B98A32C21A70CE3E0026A047 /* MSMenuTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32C11A70CE3E0026A047 /* MSMenuTableViewHeader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98A32821A70C7790026A047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98A32631A70C7790026A047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98A326A1A70C7790026A047;
+			remoteInfo = MSDynamicsDrawerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B98A326B1A70C7790026A047 /* MSDynamicsDrawerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSDynamicsDrawerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98A326F1A70C7790026A047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98A32701A70C7790026A047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B98A32721A70C7790026A047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B98A32731A70C7790026A047 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B98A32761A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MSDynamicsDrawerExample.xcdatamodel; sourceTree = "<group>"; };
+		B98A32781A70C7790026A047 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B98A327B1A70C7790026A047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B98A32811A70C7790026A047 /* MSDynamicsDrawerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSDynamicsDrawerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98A32861A70C7790026A047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98A32871A70C7790026A047 /* MSDynamicsDrawerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerExampleTests.m; sourceTree = "<group>"; };
+		B98A32921A70C7B50026A047 /* MSDynamicsDrawerStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerStyler.h; sourceTree = "<group>"; };
+		B98A32931A70C7B50026A047 /* MSDynamicsDrawerStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerStyler.m; sourceTree = "<group>"; };
+		B98A32951A70C7B50026A047 /* MSDynamicsDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerViewController.h; sourceTree = "<group>"; };
+		B98A32961A70C7B50026A047 /* MSDynamicsDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerViewController.m; sourceTree = "<group>"; };
+		B98A32991A70CB230026A047 /* MSLogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLogoViewController.h; sourceTree = "<group>"; };
+		B98A329A1A70CB230026A047 /* MSLogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLogoViewController.m; sourceTree = "<group>"; };
+		B98A329F1A70CC540026A047 /* MSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMenuViewController.h; sourceTree = "<group>"; };
+		B98A32A01A70CC540026A047 /* MSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMenuViewController.m; sourceTree = "<group>"; };
+		B98A32A21A70CC920026A047 /* MSStylersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStylersViewController.h; sourceTree = "<group>"; };
+		B98A32A31A70CC920026A047 /* MSStylersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStylersViewController.m; sourceTree = "<group>"; };
+		B98A32A51A70CD050026A047 /* MSDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSDynamicsViewController.h; path = MSDynamicsDrawerViewController/MSDynamicsViewController.h; sourceTree = "<group>"; };
+		B98A32A61A70CD050026A047 /* MSDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSDynamicsViewController.m; path = MSDynamicsDrawerViewController/MSDynamicsViewController.m; sourceTree = "<group>"; };
+		B98A32A81A70CD370026A047 /* MSMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMenuCell.h; sourceTree = "<group>"; };
+		B98A32A91A70CD370026A047 /* MSMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMenuCell.m; sourceTree = "<group>"; };
+		B98A32AB1A70CD5C0026A047 /* MSBounceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBounceViewController.h; sourceTree = "<group>"; };
+		B98A32AC1A70CD5C0026A047 /* MSBounceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBounceViewController.m; sourceTree = "<group>"; };
+		B98A32AE1A70CD990026A047 /* MSGesturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGesturesViewController.h; sourceTree = "<group>"; };
+		B98A32AF1A70CD990026A047 /* MSGesturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGesturesViewController.m; sourceTree = "<group>"; };
+		B98A32B11A70CDBA0026A047 /* MSControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSControlsViewController.h; sourceTree = "<group>"; };
+		B98A32B21A70CDBA0026A047 /* MSControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSControlsViewController.m; sourceTree = "<group>"; };
+		B98A32B41A70CDD00026A047 /* MSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMapViewController.h; sourceTree = "<group>"; };
+		B98A32B51A70CDD00026A047 /* MSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMapViewController.m; sourceTree = "<group>"; };
+		B98A32B71A70CDE60026A047 /* MSEditableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEditableTableViewController.h; sourceTree = "<group>"; };
+		B98A32B81A70CDE60026A047 /* MSEditableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEditableTableViewController.m; sourceTree = "<group>"; };
+		B98A32BA1A70CDF70026A047 /* MSLongTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLongTableViewController.h; sourceTree = "<group>"; };
+		B98A32BB1A70CDF70026A047 /* MSLongTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLongTableViewController.m; sourceTree = "<group>"; };
+		B98A32BD1A70CE0D0026A047 /* MSMonospaceWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMonospaceWebViewController.h; sourceTree = "<group>"; };
+		B98A32BE1A70CE0D0026A047 /* MSMonospaceWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMonospaceWebViewController.m; sourceTree = "<group>"; };
+		B98A32C01A70CE3E0026A047 /* MSMenuTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMenuTableViewHeader.h; sourceTree = "<group>"; };
+		B98A32C11A70CE3E0026A047 /* MSMenuTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMenuTableViewHeader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B98A32681A70C7790026A047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98A327E1A70C7790026A047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B98A32621A70C7790026A047 = {
+			isa = PBXGroup;
+			children = (
+				B98A326D1A70C7790026A047 /* MSDynamicsDrawerExample */,
+				B98A32841A70C7790026A047 /* MSDynamicsDrawerExampleTests */,
+				B98A326C1A70C7790026A047 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B98A326C1A70C7790026A047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B98A326B1A70C7790026A047 /* MSDynamicsDrawerExample.app */,
+				B98A32811A70C7790026A047 /* MSDynamicsDrawerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B98A326D1A70C7790026A047 /* MSDynamicsDrawerExample */ = {
+			isa = PBXGroup;
+			children = (
+				B98A32A51A70CD050026A047 /* MSDynamicsViewController.h */,
+				B98A32A61A70CD050026A047 /* MSDynamicsViewController.m */,
+				B98A32C01A70CE3E0026A047 /* MSMenuTableViewHeader.h */,
+				B98A32C11A70CE3E0026A047 /* MSMenuTableViewHeader.m */,
+				B98A32BD1A70CE0D0026A047 /* MSMonospaceWebViewController.h */,
+				B98A32BE1A70CE0D0026A047 /* MSMonospaceWebViewController.m */,
+				B98A32BA1A70CDF70026A047 /* MSLongTableViewController.h */,
+				B98A32BB1A70CDF70026A047 /* MSLongTableViewController.m */,
+				B98A32B71A70CDE60026A047 /* MSEditableTableViewController.h */,
+				B98A32B81A70CDE60026A047 /* MSEditableTableViewController.m */,
+				B98A32B41A70CDD00026A047 /* MSMapViewController.h */,
+				B98A32B51A70CDD00026A047 /* MSMapViewController.m */,
+				B98A32B11A70CDBA0026A047 /* MSControlsViewController.h */,
+				B98A32B21A70CDBA0026A047 /* MSControlsViewController.m */,
+				B98A32AE1A70CD990026A047 /* MSGesturesViewController.h */,
+				B98A32AF1A70CD990026A047 /* MSGesturesViewController.m */,
+				B98A32AB1A70CD5C0026A047 /* MSBounceViewController.h */,
+				B98A32AC1A70CD5C0026A047 /* MSBounceViewController.m */,
+				B98A32A81A70CD370026A047 /* MSMenuCell.h */,
+				B98A32A91A70CD370026A047 /* MSMenuCell.m */,
+				B98A32A21A70CC920026A047 /* MSStylersViewController.h */,
+				B98A32A31A70CC920026A047 /* MSStylersViewController.m */,
+				B98A329F1A70CC540026A047 /* MSMenuViewController.h */,
+				B98A32A01A70CC540026A047 /* MSMenuViewController.m */,
+				B98A32991A70CB230026A047 /* MSLogoViewController.h */,
+				B98A329A1A70CB230026A047 /* MSLogoViewController.m */,
+				B98A32911A70C7B50026A047 /* MSDynamicsDrawerViewController */,
+				B98A32721A70C7790026A047 /* AppDelegate.h */,
+				B98A32731A70C7790026A047 /* AppDelegate.m */,
+				B98A32781A70C7790026A047 /* Images.xcassets */,
+				B98A327A1A70C7790026A047 /* LaunchScreen.xib */,
+				B98A32751A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodeld */,
+				B98A326E1A70C7790026A047 /* Supporting Files */,
+			);
+			path = MSDynamicsDrawerExample;
+			sourceTree = "<group>";
+		};
+		B98A326E1A70C7790026A047 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B98A326F1A70C7790026A047 /* Info.plist */,
+				B98A32701A70C7790026A047 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B98A32841A70C7790026A047 /* MSDynamicsDrawerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B98A32871A70C7790026A047 /* MSDynamicsDrawerExampleTests.m */,
+				B98A32851A70C7790026A047 /* Supporting Files */,
+			);
+			path = MSDynamicsDrawerExampleTests;
+			sourceTree = "<group>";
+		};
+		B98A32851A70C7790026A047 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B98A32861A70C7790026A047 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B98A32911A70C7B50026A047 /* MSDynamicsDrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B98A32921A70C7B50026A047 /* MSDynamicsDrawerStyler.h */,
+				B98A32931A70C7B50026A047 /* MSDynamicsDrawerStyler.m */,
+				B98A32951A70C7B50026A047 /* MSDynamicsDrawerViewController.h */,
+				B98A32961A70C7B50026A047 /* MSDynamicsDrawerViewController.m */,
+			);
+			path = MSDynamicsDrawerViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B98A326A1A70C7790026A047 /* MSDynamicsDrawerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98A328B1A70C7790026A047 /* Build configuration list for PBXNativeTarget "MSDynamicsDrawerExample" */;
+			buildPhases = (
+				B98A32671A70C7790026A047 /* Sources */,
+				B98A32681A70C7790026A047 /* Frameworks */,
+				B98A32691A70C7790026A047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSDynamicsDrawerExample;
+			productName = MSDynamicsDrawerExample;
+			productReference = B98A326B1A70C7790026A047 /* MSDynamicsDrawerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B98A32801A70C7790026A047 /* MSDynamicsDrawerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98A328E1A70C7790026A047 /* Build configuration list for PBXNativeTarget "MSDynamicsDrawerExampleTests" */;
+			buildPhases = (
+				B98A327D1A70C7790026A047 /* Sources */,
+				B98A327E1A70C7790026A047 /* Frameworks */,
+				B98A327F1A70C7790026A047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98A32831A70C7790026A047 /* PBXTargetDependency */,
+			);
+			name = MSDynamicsDrawerExampleTests;
+			productName = MSDynamicsDrawerExampleTests;
+			productReference = B98A32811A70C7790026A047 /* MSDynamicsDrawerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B98A32631A70C7790026A047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = chu;
+				TargetAttributes = {
+					B98A326A1A70C7790026A047 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B98A32801A70C7790026A047 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B98A326A1A70C7790026A047;
+					};
+				};
+			};
+			buildConfigurationList = B98A32661A70C7790026A047 /* Build configuration list for PBXProject "MSDynamicsDrawerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B98A32621A70C7790026A047;
+			productRefGroup = B98A326C1A70C7790026A047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B98A326A1A70C7790026A047 /* MSDynamicsDrawerExample */,
+				B98A32801A70C7790026A047 /* MSDynamicsDrawerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B98A32691A70C7790026A047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98A327C1A70C7790026A047 /* LaunchScreen.xib in Resources */,
+				B98A32791A70C7790026A047 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98A327F1A70C7790026A047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B98A32671A70C7790026A047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98A32A71A70CD050026A047 /* MSDynamicsViewController.m in Sources */,
+				B98A32771A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodeld in Sources */,
+				B98A32B91A70CDE60026A047 /* MSEditableTableViewController.m in Sources */,
+				B98A32AA1A70CD370026A047 /* MSMenuCell.m in Sources */,
+				B98A32B31A70CDBA0026A047 /* MSControlsViewController.m in Sources */,
+				B98A32C21A70CE3E0026A047 /* MSMenuTableViewHeader.m in Sources */,
+				B98A32A41A70CC920026A047 /* MSStylersViewController.m in Sources */,
+				B98A329D1A70CB230026A047 /* MSLogoViewController.m in Sources */,
+				B98A32741A70C7790026A047 /* AppDelegate.m in Sources */,
+				B98A32B01A70CD990026A047 /* MSGesturesViewController.m in Sources */,
+				B98A32A11A70CC540026A047 /* MSMenuViewController.m in Sources */,
+				B98A32BF1A70CE0D0026A047 /* MSMonospaceWebViewController.m in Sources */,
+				B98A32711A70C7790026A047 /* main.m in Sources */,
+				B98A32981A70C7B50026A047 /* MSDynamicsDrawerViewController.m in Sources */,
+				B98A32B61A70CDD00026A047 /* MSMapViewController.m in Sources */,
+				B98A32BC1A70CDF70026A047 /* MSLongTableViewController.m in Sources */,
+				B98A32971A70C7B50026A047 /* MSDynamicsDrawerStyler.m in Sources */,
+				B98A32AD1A70CD5C0026A047 /* MSBounceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98A327D1A70C7790026A047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98A32881A70C7790026A047 /* MSDynamicsDrawerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B98A32831A70C7790026A047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98A326A1A70C7790026A047 /* MSDynamicsDrawerExample */;
+			targetProxy = B98A32821A70C7790026A047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B98A327A1A70C7790026A047 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B98A327B1A70C7790026A047 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B98A32891A70C7790026A047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B98A328A1A70C7790026A047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B98A328C1A70C7790026A047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MSDynamicsDrawerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B98A328D1A70C7790026A047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MSDynamicsDrawerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B98A328F1A70C7790026A047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MSDynamicsDrawerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSDynamicsDrawerExample.app/MSDynamicsDrawerExample";
+			};
+			name = Debug;
+		};
+		B98A32901A70C7790026A047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MSDynamicsDrawerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSDynamicsDrawerExample.app/MSDynamicsDrawerExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B98A32661A70C7790026A047 /* Build configuration list for PBXProject "MSDynamicsDrawerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98A32891A70C7790026A047 /* Debug */,
+				B98A328A1A70C7790026A047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98A328B1A70C7790026A047 /* Build configuration list for PBXNativeTarget "MSDynamicsDrawerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98A328C1A70C7790026A047 /* Debug */,
+				B98A328D1A70C7790026A047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98A328E1A70C7790026A047 /* Build configuration list for PBXNativeTarget "MSDynamicsDrawerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98A328F1A70C7790026A047 /* Debug */,
+				B98A32901A70C7790026A047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B98A32751A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B98A32761A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodel */,
+			);
+			currentVersion = B98A32761A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodel */;
+			path = MSDynamicsDrawerExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B98A32631A70C7790026A047 /* Project object */;
+}
