@@ -29,7 +29,6 @@
 #import "MSMenuViewController.h"
 #import "MSStylersViewController.h"
 #import "MSDynamicsViewController.h"
-
 #import "MSBounceViewController.h"
 #import "MSGesturesViewController.h"
 #import "MSControlsViewController.h"
@@ -53,11 +52,7 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
 @interface MSMenuViewController ()
 
 @property (nonatomic, strong) NSDictionary *paneViewControllerTitles;
-#if defined(STORYBOARD)
-@property (nonatomic, strong) NSDictionary *paneViewControllerIdentifiers;
-#else
 @property (nonatomic, strong) NSDictionary *paneViewControllerClasses;
-#endif
 @property (nonatomic, strong) NSDictionary *sectionTitles;
 @property (nonatomic, strong) NSArray *tableViewSectionBreaks;
 
@@ -76,6 +71,7 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self initialize];
+        NSLog(@"initWithCoder");
     }
     return self;
 }
@@ -87,6 +83,7 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self initialize];
+        NSLog(@"initWithNibName");
     }
     return self;
 }
@@ -126,7 +123,7 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
         @(MSPaneViewControllerTypeLongTable) : @"Long Table",
         @(MSPaneViewControllerTypeMonospace) : @"Monospace Ltd."
     };
-#if !defined(STORYBOARD)
+
     self.paneViewControllerClasses = @{
         @(MSPaneViewControllerTypeStylers) : [MSStylersViewController class],
         @(MSPaneViewControllerTypeDynamics) : [MSDynamicsViewController class],
@@ -138,19 +135,7 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
         @(MSPaneViewControllerTypeLongTable) : [MSLongTableViewController class],
         @(MSPaneViewControllerTypeMonospace) : [MSMonospaceWebViewController class]
     };
-#else
-    self.paneViewControllerIdentifiers = @{
-        @(MSPaneViewControllerTypeStylers) : @"Stylers",
-        @(MSPaneViewControllerTypeDynamics) : @"Dynamics",
-        @(MSPaneViewControllerTypeBounce) : @"Bounce",
-        @(MSPaneViewControllerTypeGestures) : @"Gestures",
-        @(MSPaneViewControllerTypeControls) : @"Controls",
-        @(MSPaneViewControllerTypeMap) : @"Map",
-        @(MSPaneViewControllerTypeEditableTable) : @"Editable Table",
-        @(MSPaneViewControllerTypeLongTable) : @"Long Table",
-        @(MSPaneViewControllerTypeMonospace) : @"Monospace"
-    };
-#endif
+
     self.sectionTitles = @{
         @(MSMenuViewControllerTableViewSectionTypeOptions) : @"Options",
         @(MSMenuViewControllerTableViewSectionTypeExamples) : @"Examples",
@@ -186,12 +171,9 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
     
     BOOL animateTransition = self.dynamicsDrawerViewController.paneViewController != nil;
     
-#if defined(STORYBOARD)
-    UIViewController *paneViewController = [self.storyboard instantiateViewControllerWithIdentifier:self.paneViewControllerIdentifiers[@(paneViewControllerType)]];
-#else
+
     Class paneViewControllerClass = self.paneViewControllerClasses[@(paneViewControllerType)];
     UIViewController *paneViewController = (UIViewController *)[paneViewControllerClass new];
-#endif
     
     paneViewController.navigationItem.title = self.paneViewControllerTitles[@(paneViewControllerType)];
     
@@ -232,19 +214,19 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
         return ([self.tableViewSectionBreaks[section] integerValue] - [self.tableViewSectionBreaks[(section - 1)] integerValue]);
     }
 }
-
+/*返回每一个Section的自定义头*/
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UITableViewHeaderFooterView *headerView = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:MSDrawerHeaderReuseIdentifier];
     headerView.textLabel.text = [self.sectionTitles[@(section)] uppercaseString];
     return headerView;
 }
-
+/*返回每一个Section的自定义头的高度*/
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return 30.0;
 }
-
+/*返回每一个Section的自定义尾的高度*/
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return FLT_EPSILON;

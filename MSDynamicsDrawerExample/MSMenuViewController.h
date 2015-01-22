@@ -28,6 +28,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MSDynamicsDrawerViewController.h"
+/*枚举的使用,参考http://blog.csdn.net/ysy441088327/article/details/8012677*/
+/*定义一个MSPaneViewControllerType的整数类型的枚举*/
 typedef NS_ENUM(NSUInteger, MSPaneViewControllerType) {
     MSPaneViewControllerTypeStylers,
     MSPaneViewControllerTypeDynamics,
@@ -42,7 +44,12 @@ typedef NS_ENUM(NSUInteger, MSPaneViewControllerType) {
 };
 
 @interface MSMenuViewController : UITableViewController
-
+/*如果你在看以下二行代码的时候对assign或者weak有理解不清楚时,可以考虑看看以下文章*/
+/*
+ http://www.cnblogs.com/mybkn/archive/2012/03/08/2384860.html
+ 声明为weak的指针，指针指向的地址一旦被释放，这些指针都将被赋值为nil
+ http://stackoverflow.com/questions/8863269/how-do-i-verify-reference-count-in-arc-mode
+*/
 @property (nonatomic, assign) MSPaneViewControllerType paneViewControllerType;
 @property (nonatomic, weak) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
 
