@@ -20,32 +20,34 @@
 
 @implementation AppDelegate
 
-
+#pragma mark - System Event
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    
+    /*--------------------------------------------抽屉效果--------------------------------------------------------------*/
     self.dynamicsDrawerViewController=[MSDynamicsDrawerViewController new];
     self.dynamicsDrawerViewController.delegate=self;
     
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerParallaxStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
-    
+    //左边栏菜单Controller
     MSMenuViewController *menuViewController = [MSMenuViewController new];
     menuViewController.dynamicsDrawerViewController = self.dynamicsDrawerViewController;
     [self.dynamicsDrawerViewController setDrawerViewController:menuViewController forDirection:MSDynamicsDrawerDirectionLeft];
-    
+    //右边栏菜单Controller
     MSLogoViewController *logoViewController = [MSLogoViewController new];
     [self.dynamicsDrawerViewController setDrawerViewController:logoViewController forDirection:MSDynamicsDrawerDirectionRight];
     
-    // Transition to the first view controller
+    //出现的第一个ControllerView
     [menuViewController transitionToViewController:MSPaneViewControllerTypeStylers];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.dynamicsDrawerViewController;
     [self.window makeKeyAndVisible];
+    //添加一个背景
     [self.window addSubview:self.windowBackground];
+    //将背景发送到最后的一层
     [self.window sendSubviewToBack:self.windowBackground];
-    
+    /*--------------------------------------------抽屉效果--------------------------------------------------------------*/
     return YES;
 }
 
