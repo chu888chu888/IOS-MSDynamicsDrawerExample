@@ -73,6 +73,8 @@ typedef NS_OPTIONS(NSInteger, MSDynamicsDrawerDirection) {
      The drawers that are revealed from underneath all edges of the pane.
      */
     MSDynamicsDrawerDirectionAll        = UIRectEdgeAll
+    
+    
 };
 
 /**
