@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90896771A70DB460005F5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90896761A70DB460005F5D5 /* Assets.xcassets */; };
 		B98A32711A70C7790026A047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32701A70C7790026A047 /* main.m */; };
 		B98A32741A70C7790026A047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A32731A70C7790026A047 /* AppDelegate.m */; };
 		B98A32771A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B98A32751A70C7790026A047 /* MSDynamicsDrawerExample.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B90896761A70DB460005F5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B98A326B1A70C7790026A047 /* MSDynamicsDrawerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSDynamicsDrawerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A326F1A70C7790026A047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B98A32701A70C7790026A047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +104,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B90896741A70D66D0005F5D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B98A32A51A70CD050026A047 /* MSDynamicsViewController.h */,
+				B98A32A61A70CD050026A047 /* MSDynamicsViewController.m */,
+				B98A32BD1A70CE0D0026A047 /* MSMonospaceWebViewController.h */,
+				B98A32BE1A70CE0D0026A047 /* MSMonospaceWebViewController.m */,
+				B98A32BA1A70CDF70026A047 /* MSLongTableViewController.h */,
+				B98A32BB1A70CDF70026A047 /* MSLongTableViewController.m */,
+				B98A32B71A70CDE60026A047 /* MSEditableTableViewController.h */,
+				B98A32B81A70CDE60026A047 /* MSEditableTableViewController.m */,
+				B98A32B41A70CDD00026A047 /* MSMapViewController.h */,
+				B98A32B51A70CDD00026A047 /* MSMapViewController.m */,
+				B98A32B11A70CDBA0026A047 /* MSControlsViewController.h */,
+				B98A32B21A70CDBA0026A047 /* MSControlsViewController.m */,
+				B98A32AE1A70CD990026A047 /* MSGesturesViewController.h */,
+				B98A32AF1A70CD990026A047 /* MSGesturesViewController.m */,
+				B98A32AB1A70CD5C0026A047 /* MSBounceViewController.h */,
+				B98A32AC1A70CD5C0026A047 /* MSBounceViewController.m */,
+				B98A32A21A70CC920026A047 /* MSStylersViewController.h */,
+				B98A32A31A70CC920026A047 /* MSStylersViewController.m */,
+				B98A329F1A70CC540026A047 /* MSMenuViewController.h */,
+				B98A32A01A70CC540026A047 /* MSMenuViewController.m */,
+				B98A32991A70CB230026A047 /* MSLogoViewController.h */,
+				B98A329A1A70CB230026A047 /* MSLogoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B90896751A70D68D0005F5D5 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				B98A32C01A70CE3E0026A047 /* MSMenuTableViewHeader.h */,
+				B98A32C11A70CE3E0026A047 /* MSMenuTableViewHeader.m */,
+				B98A32A81A70CD370026A047 /* MSMenuCell.h */,
+				B98A32A91A70CD370026A047 /* MSMenuCell.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
 		B98A32621A70C7790026A047 = {
 			isa = PBXGroup;
 			children = (
@@ -123,32 +165,9 @@
 		B98A326D1A70C7790026A047 /* MSDynamicsDrawerExample */ = {
 			isa = PBXGroup;
 			children = (
-				B98A32A51A70CD050026A047 /* MSDynamicsViewController.h */,
-				B98A32A61A70CD050026A047 /* MSDynamicsViewController.m */,
-				B98A32C01A70CE3E0026A047 /* MSMenuTableViewHeader.h */,
-				B98A32C11A70CE3E0026A047 /* MSMenuTableViewHeader.m */,
-				B98A32BD1A70CE0D0026A047 /* MSMonospaceWebViewController.h */,
-				B98A32BE1A70CE0D0026A047 /* MSMonospaceWebViewController.m */,
-				B98A32BA1A70CDF70026A047 /* MSLongTableViewController.h */,
-				B98A32BB1A70CDF70026A047 /* MSLongTableViewController.m */,
-				B98A32B71A70CDE60026A047 /* MSEditableTableViewController.h */,
-				B98A32B81A70CDE60026A047 /* MSEditableTableViewController.m */,
-				B98A32B41A70CDD00026A047 /* MSMapViewController.h */,
-				B98A32B51A70CDD00026A047 /* MSMapViewController.m */,
-				B98A32B11A70CDBA0026A047 /* MSControlsViewController.h */,
-				B98A32B21A70CDBA0026A047 /* MSControlsViewController.m */,
-				B98A32AE1A70CD990026A047 /* MSGesturesViewController.h */,
-				B98A32AF1A70CD990026A047 /* MSGesturesViewController.m */,
-				B98A32AB1A70CD5C0026A047 /* MSBounceViewController.h */,
-				B98A32AC1A70CD5C0026A047 /* MSBounceViewController.m */,
-				B98A32A81A70CD370026A047 /* MSMenuCell.h */,
-				B98A32A91A70CD370026A047 /* MSMenuCell.m */,
-				B98A32A21A70CC920026A047 /* MSStylersViewController.h */,
-				B98A32A31A70CC920026A047 /* MSStylersViewController.m */,
-				B98A329F1A70CC540026A047 /* MSMenuViewController.h */,
-				B98A32A01A70CC540026A047 /* MSMenuViewController.m */,
-				B98A32991A70CB230026A047 /* MSLogoViewController.h */,
-				B98A329A1A70CB230026A047 /* MSLogoViewController.m */,
+				B90896761A70DB460005F5D5 /* Assets.xcassets */,
+				B90896751A70D68D0005F5D5 /* Table */,
+				B90896741A70D66D0005F5D5 /* Controller */,
 				B98A32911A70C7B50026A047 /* MSDynamicsDrawerViewController */,
 				B98A32721A70C7790026A047 /* AppDelegate.h */,
 				B98A32731A70C7790026A047 /* AppDelegate.m */,
@@ -278,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98A327C1A70C7790026A047 /* LaunchScreen.xib in Resources */,
+				B90896771A70DB460005F5D5 /* Assets.xcassets in Resources */,
 				B98A32791A70C7790026A047 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
